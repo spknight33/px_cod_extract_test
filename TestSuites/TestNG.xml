@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cod_extract_test" >
+
+<test name="post_initial_extract_test"> 
+<classes>
+<class name="cod.extract.test.scripts.DBTests"></class>
+</classes>
+</test>
+</suite>

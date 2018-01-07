@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [cod_extract_test]">
+  <test name="post_initial_extract_test(failed)">
+    <classes>
+      <class name="cod.extract.test.scripts.DBTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cod.extract.test.scripts.DBTests -->
+    </classes>
+  </test> <!-- post_initial_extract_test(failed) -->
+</suite> <!-- Failed suite [cod_extract_test] -->

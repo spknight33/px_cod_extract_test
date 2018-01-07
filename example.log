@@ -1,0 +1,24 @@
+ERROR main cod.extract.test.BaseDatabaseClass - cannot find url property
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:4
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
