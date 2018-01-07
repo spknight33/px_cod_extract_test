@@ -22,3 +22,111 @@ INFO main stepdefinition.DBTest - total records on DB:1
 INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
 INFO main stepdefinition.DBTest - total records on DB:0
 INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:4
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:4
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:4
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:4
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:5
+INFO main stepdefinition.DBTest - total records on DB table2:4
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+ERROR main stepdefinition.DBTest - Unexpected record type in organisation: 25
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection

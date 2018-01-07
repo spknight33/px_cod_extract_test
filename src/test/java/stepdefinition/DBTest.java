@@ -3,7 +3,9 @@ package stepdefinition;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
@@ -130,6 +132,45 @@ public class DBTest {
 		Assert.assertTrue(count1>count2, "Expected more records in table "+dbTable1+ " than in table " + dbTable2);
 		
 	}
+	
+	@Then("^the database contains only expected record types$")
+	public void the_database_contains_only_expected_record_types() throws Throwable {
+		
+		Collection<Integer> typeList = typeMap.values();
+		String query = "Select distinct cip_bet_type from organisation where cip_bet_type not in ";
+	    query = query +  sqlFormattedList(typeList);
+		
+		log.info("sql query is: "+query);
+		Connection connection = BaseDatabaseClass.getConnection();
+		Statement st=connection.createStatement();
+		ResultSet rs= st.executeQuery(query);
+		
+		if (rs.isBeforeFirst())
+		{
+			// fail as we have record types we are not expecting
+			rs.next();
+			int badType = rs.getInt(1);
+			log.error("Unexpected record type in organisation: "+ badType);
+			Assert.fail("Unexpected cip_bet_types in organisation table :" + badType);
+		}
+		
+		rs.close();
+		
+	    
+	}
+	
+	private String sqlFormattedList(Collection<Integer> typeList){
+		 StringBuilder sb = new StringBuilder();
+		 sb.append("(");
+		 for (Integer i : typeList){
+		   sb.append(i+",");
+		 }
+		 sb.deleteCharAt(sb.length() -1);
+		 sb.append(")");
+		 return sb.toString();
+		}
+	
+	
 	
 	
 

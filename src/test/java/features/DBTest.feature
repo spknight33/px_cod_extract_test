@@ -19,6 +19,9 @@ Feature: Organisation Extract_Load DB test feature
     Then the database contains "AT" record types
     And the database contains "PCO" record types
     And the database contains "Contractor" record types
+    
+     Scenario: DB test initial load only record types expected are present
+    Then the database contains only expected record types
 
   #And the database contains "Dispensing" and "Appliance" contractors
   # Pharmacy-YP type is arbitary 1337, chosen by developer
@@ -27,8 +30,7 @@ Feature: Organisation Extract_Load DB test feature
     Then the database contains "Pharmacy-YP" record types
     Then the database contains "Pharmacy-Grouping" record types
 
-  Scenario: DB test initial load only record types expected are present
-    Then the database contains only expected record types
+
 
   # TODO - check with Andrew if this is always true? including DPC
   #   Scenario: DB test initial load record data integrity
