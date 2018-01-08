@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-cod_extract_test">
-              <span class="suite-name border-failed">cod_extract_test</span>
+              <span class="suite-name border-passed">cod_extract_test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-cod_extract_test" class="hide-methods failed suite-cod_extract_test"> (hide)</a> <!-- hide-methods failed suite-cod_extract_test -->
-                      <a href="#" panel-name="suite-cod_extract_test" class="show-methods failed suite-cod_extract_test"> (show)</a> <!-- show-methods failed suite-cod_extract_test -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-cod_extract_test" class="hide-methods passed suite-cod_extract_test"> (hide)</a> <!-- hide-methods passed suite-cod_extract_test -->
+                      <a href="#" panel-name="suite-cod_extract_test" class="show-methods passed suite-cod_extract_test"> (show)</a> <!-- show-methods passed suite-cod_extract_test -->
                     </span>
-                    <div class="method-list-content failed suite-cod_extract_test">
+                    <div class="method-list-content passed suite-cod_extract_test">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-cod_extract_test" title="cod.extract.test.scripts.DBTests" hash-for-method="feature(Organisation Extract_Load DB test feature)">feature(Organisation Extract_Load DB test feature)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-cod_extract_test -->
+                    </div> <!-- method-list-content passed suite-cod_extract_test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-cod_extract_test" class="panel cod_extract_test">
-          <div class="suite-cod_extract_test-class-failed">
+          <div class="suite-cod_extract_test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">cod.extract.test.scripts.DBTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,20 +129,12 @@
                   </a> <!-- feature(Organisation Extract_Load DB test feature) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Organisation Extract_Load DB test feature)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Expected organisation records of type 1337 but none found expected [true] but found [false]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: Expected organisation records of type 1337 but none found expected [true] but found [false]
-	at stepdefinition.DBTest.the_database_contains_record_types(DBTest.java:75)
-	at ✽.Then the database contains &quot;Pharmacy-YP&quot; record types(src/test/java/features/DBTest.feature:28)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-cod_extract_test-class-failed -->
+          </div> <!-- suite-cod_extract_test-class-passed -->
         </div> <!-- panel cod_extract_test -->
         <div panel-name="test-xml-cod_extract_test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -207,12 +199,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'cod.extract.test.scripts.DBTests')
-data.setCell(0, 3, 538);
+data.setCell(0, 3, 674);
 window.suiteTableData['cod_extract_test']= { tableData: data, tableDiv: 'times-div-cod_extract_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 538 ms</span>
+              <span class="suite-total-time">Total running time: 674 ms</span>
               <div id="times-div-cod_extract_test">
               </div> <!-- times-div-cod_extract_test -->
             </div> <!-- times-div -->
@@ -245,21 +237,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">366 ms</span>
+                <span class="method-start">390 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">feature(Organisation Extract_Load DB test feature)</span>
-                <span class="method-start">910 ms</span>
+                <span class="method-start">771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1454 ms</span>
+                <span class="method-start">1447 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1459 ms</span>
+                <span class="method-start">1449 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

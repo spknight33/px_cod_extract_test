@@ -130,3 +130,802 @@ ERROR main stepdefinition.DBTest - Unexpected record type in organisation: 25
 INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
 INFO main stepdefinition.DBTest - total records on DB:0
 INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:5
+INFO main stepdefinition.DBTest - total records on DB table2:4
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+ERROR main stepdefinition.DBTest - Unexpected record type(s) in organisation: [25]
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 6
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:6
+INFO main stepdefinition.DBTest - total records on DB table2:5
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+ERROR main stepdefinition.DBTest - Unexpected record type(s) in organisation: [25]
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 6
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:6
+INFO main stepdefinition.DBTest - total records on DB table2:5
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 6
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:6
+INFO main stepdefinition.DBTest - total records on DB table2:5
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+ERROR main stepdefinition.DBTest - Unexpected record type(s) in organisation: [77,25]
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 3
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 6
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:6
+INFO main stepdefinition.DBTest - total records on DB table2:3
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 4
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 7
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:7
+INFO main stepdefinition.DBTest - total records on DB table2:4
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Pharmacy-Grouping
+INFO main stepdefinition.DBTest - total records on DB:0
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation
+INFO main stepdefinition.DBTest - total records on DB: 5
+INFO main stepdefinition.DBTest - contains at least 1records for table: organisation_relation
+INFO main stepdefinition.DBTest - total records on DB: 7
+INFO main stepdefinition.DBTest - more records in table organisation_relationthan records for tableorganisation
+INFO main stepdefinition.DBTest - total records on DB table1:7
+INFO main stepdefinition.DBTest - total records on DB table2:5
+INFO main stepdefinition.DBTest - contains record type AT
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type PCO
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Contractor
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - sql query is: Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - contains record type Pharmacy-YP
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main stepdefinition.DBTest - contains record type Pharmacy-Grouping
+INFO main stepdefinition.DBTest - total records on DB:1
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - run query :Select * from organisation where altcode = Q98 and cip_bet_type = 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where altcode = 07Z00 and cip_bet_type = 46
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = Q98 and cip_bet_type = 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 07Z00 and cip_bet_type = 46
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 5
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 5
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 6
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 6
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+ERROR main stepdefinition.DBTest - Unexpected record type(s) in organisation: [27]
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 27
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 27
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 6
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 6
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 7
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 7
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 7
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 7
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 7
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 9
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 9
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 7
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:1
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 9
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 9
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 9
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 9
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = 'Q98' and alt_code_child = '07Z00'
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 10
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 10
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = 'Q98' and alt_code_child = '07Z00'
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 11
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 11
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = 'Q98' and alt_code_child = '07Z00'
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+INFO main cod.extract.test.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 12
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 12
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = 'Q98' and alt_code_child = '07Z00'
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
+INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
