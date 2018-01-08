@@ -1,7 +1,7 @@
 package cod.extract.test.scripts;
 
 
-import cod.extract.test.BaseDatabaseClass;
+import cod.extract.test.base.BaseDatabaseClass;
 import cucumber.api.CucumberOptions;
 
 

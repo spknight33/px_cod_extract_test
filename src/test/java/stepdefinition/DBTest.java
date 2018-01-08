@@ -10,7 +10,7 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 
-import cod.extract.test.BaseDatabaseClass;
+import cod.extract.test.base.BaseDatabaseClass;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

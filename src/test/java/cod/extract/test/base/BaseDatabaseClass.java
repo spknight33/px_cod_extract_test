@@ -1,4 +1,4 @@
-package cod.extract.test;
+package cod.extract.test.base;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

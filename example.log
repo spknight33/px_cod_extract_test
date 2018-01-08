@@ -929,3 +929,48 @@ INFO main stepdefinition.DBTest - run query :Select * from organisation where al
 INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
 INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
 INFO main cod.extract.test.BaseDatabaseClass - Closing DB Connection
+ERROR main cod.extract.test.BaseDatabaseClass - cannot find url property
+INFO main cod.extract.test.base.BaseDatabaseClass - DB url: jdbc:postgresql://localhost:5432/postgres
+INFO main cod.extract.test.base.BaseDatabaseClass - using driver: org.postgresql.Driver
+INFO main cod.extract.test.base.BaseDatabaseClass - get DB connection
+INFO main cod.extract.test.base.BaseDatabaseClass - got DB connection!
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation
+INFO main stepdefinition.DBTest - Total records for table organisation on DB: 8
+INFO main stepdefinition.DBTest - Check DB contains at least 1 records for table: organisation_relation
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation_relation
+INFO main stepdefinition.DBTest - Total records for table organisation_relation on DB: 12
+INFO main stepdefinition.DBTest - Check there are more records in table organisation_relation than records for tableorganisation
+INFO main stepdefinition.DBTest - Total records on DB table organisation_relation: 12
+INFO main stepdefinition.DBTest - Total records on DB table organisation: 8
+INFO main stepdefinition.DBTest - Check DB contains record type: AT
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 37
+INFO main stepdefinition.DBTest - Total AT records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: PCO
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 46
+INFO main stepdefinition.DBTest - Total PCO records on DB:2
+INFO main stepdefinition.DBTest - Check DB contains record type: Contractor
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 8
+INFO main stepdefinition.DBTest - Total Contractor records on DB:2
+INFO main stepdefinition.DBTest - run query :Select distinct cip_bet_type from organisation where cip_bet_type not in (37,8,1337,46,1338)
+INFO main stepdefinition.DBTest - No Duplicate organisation record check: select alt_code from organisation ou where (select count(*) from organisation inr where inr.alt_code = ou.alt_code) > 1 
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-YP
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1337
+INFO main stepdefinition.DBTest - Total Pharmacy-YP records on DB:1
+INFO main stepdefinition.DBTest - Check DB contains record type: Pharmacy-Grouping
+INFO main stepdefinition.DBTest - run query :Select count(*) from organisation org where org.cip_bet_type = 1338
+INFO main stepdefinition.DBTest - Total Pharmacy-Grouping records on DB:1
+INFO main stepdefinition.DBTest - Check database contains altcode : Q98, type: 37
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'Q98' and cip_bet_type = 37
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database relation contains parent: Q98, child: 07Z00
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = 'Q98' and alt_code_child = '07Z00'
+INFO main stepdefinition.DBTest - Check database contains altcode : 07Z00, type: 46
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = '07Z00' and cip_bet_type = 46
+INFO main stepdefinition.DBTest - Check database contains altcode : FXXXX, type: 8
+INFO main stepdefinition.DBTest - run query :Select * from organisation where alt_code = 'FXXXX' and cip_bet_type = 8
+INFO main stepdefinition.DBTest - Check database relation contains parent: 07Z00, child: FXXXX
+INFO main stepdefinition.DBTest - run query :Select * from organisation_relation where alt_code_parent = '07Z00' and alt_code_child = 'FXXXX'
+INFO main cod.extract.test.base.BaseDatabaseClass - Closing DB Connection
+ERROR main cod.extract.test.base.BaseDatabaseClass - cannot find url property
