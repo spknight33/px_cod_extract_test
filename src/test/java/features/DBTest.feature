@@ -19,10 +19,12 @@ Feature: Organisation Extract_Load DB test feature
   # AT record type is 37
   # PCO record type is 46
   # Contractor type is 8
+  # Division type is 31
   Scenario: DB test initial load record types from db2
     Then the database contains "AT" record type
     And the database contains "PCO" record type
     And the database contains "Contractor" record type
+    And the database contains "Division" record type
     
    # Check that we dont have any other than the expected record types 
    Scenario: DB test initial load only record types expected are present
@@ -54,3 +56,9 @@ Feature: Organisation Extract_Load DB test feature
     | parent_code | parent_type | child_code | child_type |
     | Q98         | 37          | 07Z00      | 46         |
     | 07Z00       | 46          | FXXXX      | 8          |
+    
+    
+    # Check that the Bulk load tables are cleared down 
+    Scenario: DB test initial load Bulk control tables are empty at end
+    Then the database contains exactly 0 "Bi_organisation" records
+    Then the database contains exactly 0 "Bi_organisation_relation" records

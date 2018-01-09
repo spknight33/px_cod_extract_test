@@ -29,6 +29,7 @@ public class DBTest {
 		typeMap.put("Contractor", 8);
 		typeMap.put("Pharmacy-YP", 1337);
 		typeMap.put("Pharmacy-Grouping", 1338);
+		typeMap.put("Division", 31);
 	}
 
 	@Given("^An initial extract_load run$")
@@ -251,6 +252,27 @@ public class DBTest {
 			Assert.fail("Organisation_relation record for parent_alt_code: "+parentCode +" and child_alt_Code: " + childCode + " not found");
 		}
 	    
+	}
+	
+	@Then("^the database contains exactly (\\d+) \"([^\"]*)\" records$")
+	public void the_database_contains_exactly_records(int expectedRecordCount, String dbTable) throws Throwable {
+		log.info("Check DB contains exactly " + expectedRecordCount + " records for table: " + dbTable);
+
+		String query = "Select count(*) from " + dbTable;
+
+		log.info("run query :"+query);
+		Connection connection = BaseDatabaseClass.getConnection();
+		Statement st = connection.createStatement();
+		ResultSet rs = st.executeQuery(query);
+
+		rs.next();
+		int count = rs.getInt(1);
+		rs.close();
+
+		log.info("Total records for table "+ dbTable +" on DB: " + count);
+
+		Assert.assertTrue(count == expectedRecordCount, "Expected records in table " + dbTable + " to be " +
+				+ expectedRecordCount + ", but was " + count);
 	}
 
 }
