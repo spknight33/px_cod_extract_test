@@ -214,11 +214,17 @@ public class DBTest {
 	
 	
 	@Then("^the database contains \"([^\"]*)\" of \"([^\"]*)\"$")
-	public void the_database_contains_of(String altcode, String type) throws Throwable {
-	    log.info("Check database contains altcode : "+altcode+ ", type: "+ type);
+	public void the_database_contains_of(String altcode, String recordType) throws Throwable {
+	    log.info("Check database contains altcode : "+altcode+ ", type: "+ recordType);
 	    
+	     // lookup cucumber type for bet_type_id
+	 		int betType = (int) typeMap.get(recordType);
+
+	 		if (betType == 0) {
+	 			Assert.fail("Unknown recordType: " + recordType);
+	 		}
 	    
-	    String query = "Select * from organisation where alt_code = '" + altcode + "' and cip_bet_type = " + type;
+	    String query = "Select * from organisation where alt_code = '" + altcode + "' and cip_bet_type = " + betType;
 
 		log.info("run query :"+query);
 		Connection connection = BaseDatabaseClass.getConnection();
@@ -228,7 +234,7 @@ public class DBTest {
 		if (!rs.isBeforeFirst()) {
 			// We must have results  - so empty resultset cause fail
 			
-			Assert.fail("Organisation record for altcode: "+altcode +" and type: " + type + " not found");
+			Assert.fail("Organisation record for altcode: "+altcode +" and type: " + betType + " not found");
 		}
 
 	    
@@ -273,6 +279,55 @@ public class DBTest {
 
 		Assert.assertTrue(count == expectedRecordCount, "Expected records in table " + dbTable + " to be " +
 				+ expectedRecordCount + ", but was " + count);
+	}
+	
+	@Then("^the database does not contain organisation for \"([^\"]*)\" for inactive code \"([^\"]*)\"$")
+	public void the_database_does_not_contain_organisation_for_for_inactive_code(String recordType, String altCode) throws Throwable {
+		log.info("Check DB does not contain inactive record: " + altCode+ " of type: "+recordType);
+
+		// lookup cucumber type for bet_type_id
+		int betType = (int) typeMap.get(recordType);
+
+		if (betType == 0) {
+			Assert.fail("Unknown recordType: " + recordType);
+		}
+
+		String query = "Select count(*) from organisation org where alt_code = '" + altCode + "'" +
+						" and org.cip_bet_type = " + betType;
+				   
+
+		log.info("run query :"+query);
+		Connection connection = BaseDatabaseClass.getConnection();
+		Statement st = connection.createStatement();
+		ResultSet rs = st.executeQuery(query);
+
+		rs.next();
+		int count = rs.getInt(1);
+		rs.close();
+
+		log.info("Total " + recordType+ " records on DB:" + count);
+
+		Assert.assertTrue(count == 0, "Expected NO organisation records for inactive code " + altCode + ", but some found");
+
+	}
+	
+	
+	@Then("^the database does not contain a relation record between \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void the_database_does_not_contain_a_relation_record_between_and(String parentCode, String childCode) throws Throwable {
+		 log.info("Check NO database relation for parent: "+parentCode + ", child: "+ childCode);
+		    
+		    String query = "Select * from organisation_relation where alt_code_parent = '" + parentCode + "' and alt_code_child = '" + childCode +"'";
+
+			log.info("run query :"+query);
+			Connection connection = BaseDatabaseClass.getConnection();
+			Statement st = connection.createStatement();
+			ResultSet rs = st.executeQuery(query);
+
+			if (rs.isBeforeFirst()) {
+				// We must not have results  - so non empty resultset cause fail
+				
+				Assert.fail("Organisation_relation record for Inactive Relation between parent_alt_code: "+parentCode +" and child_alt_Code: " + childCode + " found");
+			}
 	}
 
 }
