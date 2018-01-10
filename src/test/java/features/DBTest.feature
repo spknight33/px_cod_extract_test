@@ -51,17 +51,18 @@ Feature: Organisation Extract_Load DB test feature
 
     Examples: 
       | parent_code | parent_type       | child_code | child_type |
-      | Q98         | AT                | 07Z00      | PCO        |
-      | 07Z00       | PCO               | FXXXX      | Contractor |
       | ES00106     | Pharmacy-Grouping | FHE42      | Contractor |
       | ES00106     | Pharmacy-Grouping | FHL56      | Contractor |
       | ES00106     | Pharmacy-Grouping | FFG82      | Contractor |
       | ES00106     | Pharmacy-Grouping | FA676      | Contractor |
       | ES00004     | Pharmacy-Grouping | YP02751    | Pharmacy-YP|
       | ES00011     | Pharmacy-Grouping | YP02747    | Pharmacy-YP|
+      | YP00894     | Pharmacy-YP       | FK885      | Contractor |
+      | YP00894     | Pharmacy-YP       | FLA07      | Contractor |
       # ES00106 is active grouping with multiple relations of type contractor
       # ES00004 is active gropuing with active relation of pharmacyYP
       # ES00011 has some inactive records on dpc, but one is active with an active relation
+      # YP00894 is active with multiple relations of type contractor
 
   # Check that the Bulk load tables are cleared down
   Scenario: DB test initial load Bulk control tables are empty at end
@@ -75,15 +76,19 @@ Feature: Organisation Extract_Load DB test feature
     Examples: 
       | org_type          | code    |
       | Pharmacy-Grouping | ES00021 |
+      | Pharmacy-YP       | YP00846 |
       # ES00021 (KentPharm) is inactive on production & all relations are also inactive
+      # YP00846 has only Inactive or Retired records 
     
 
   # Check that inactive relations on DPC are not loaded, even if the parent org is active
-  # ES00034 (superdrug) is active, but relation to yp02787 is inactive
   Scenario Outline: DB test inactive relation with active organisation not loaded
     Then the database contains "<parent_code>" of "<parent_type>"
     And the database does not contain a relation record between "<parent_code>" and "<child_code>"
 
     Examples: 
       | parent_code | parent_type       | child_code | child_type |
-      | ES00034     | Pharmacy-Grouping | YP02787    | Contractor |
+      | ES00034     | Pharmacy-Grouping | YP02787    | Pharmacy-YP |
+      | YP02415     | Pharmacy-YP       | FTC04      | Contractor |
+       # ES00034 (superdrug) is active, but relation to yp02787 is inactive
+       # YP02415 is active, but relation to FTC04 is inactive
