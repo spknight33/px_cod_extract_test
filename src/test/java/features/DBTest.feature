@@ -57,6 +57,11 @@ Feature: Organisation Extract_Load DB test feature
       | ES00106     | Pharmacy-Grouping | FHL56      | Contractor |
       | ES00106     | Pharmacy-Grouping | FFG82      | Contractor |
       | ES00106     | Pharmacy-Grouping | FA676      | Contractor |
+      | ES00004     | Pharmacy-Grouping | YP02751    | Pharmacy-YP|
+      | ES00011     | Pharmacy-Grouping | YP02747    | Pharmacy-YP|
+      # ES00106 is active grouping with multiple relations of type contractor
+      # ES00004 is active gropuing with active relation of pharmacyYP
+      # ES00011 has some inactive records on dpc, but one is active with an active relation
 
   # Check that the Bulk load tables are cleared down
   Scenario: DB test initial load Bulk control tables are empty at end
@@ -67,13 +72,11 @@ Feature: Organisation Extract_Load DB test feature
   Scenario Outline: DB test inactive organisations on DPC
     Then the database does not contain organisation for "<org_type>" for inactive code "<code>"
 
-    # ES00021 (KentPharm) is inactive on production & all relations are also inactive
-    # ES00011 (Co-operative) is inactive on production with active relation (yp02747)
-    #
     Examples: 
       | org_type          | code    |
       | Pharmacy-Grouping | ES00021 |
-      | Pharmacy-Grouping | ES00011 |
+      # ES00021 (KentPharm) is inactive on production & all relations are also inactive
+    
 
   # Check that inactive relations on DPC are not loaded, even if the parent org is active
   # ES00034 (superdrug) is active, but relation to yp02787 is inactive
